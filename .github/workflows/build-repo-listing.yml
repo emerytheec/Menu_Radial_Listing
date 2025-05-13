@@ -1,0 +1,25 @@
+name: Build Repo Listing
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Build Repo Listing
+        uses: vrchat-community/package-list-action@v2
+        id: package_list
+        
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add Website/
+          git commit -m "Actualiza listado de paquetes" || echo "No changes to commit"
+          git push
