@@ -1,0 +1,22 @@
+{
+  "name": "Menu Radial",
+  "id": "com.bender-dios.menu-radial.listing",
+  "url": "https://emerytheec.github.io/Menu_Radial_Listing/index.json",
+  "author": {
+    "name": "Bender_Dios",
+    "email": "bender_dios@email.com",
+    "url": "https://bender-dios.com"
+  },
+  "description": "Un conjunto de herramientas para crear menús radiales para avatares de VRChat desde Unity",
+  "infoLink": {
+    "url": "https://github.com/emerytheec/Menu_Radial",
+    "text": "Ver en GitHub"
+  },
+  "githubRepos": [
+    {
+      "name": "Menu_Radial",
+      "owner": "emerytheec"
+    }
+  ],
+  "packages": []
+}
